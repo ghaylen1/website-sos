@@ -58,6 +58,9 @@ function initializeLanguageSelector() {
     langBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         languageList.classList.toggle('active');
+        if (languageList.classList.contains('active')) {
+            positionDropdown(langBtn, languageList);
+        }
     });
 
     // Handle language selection

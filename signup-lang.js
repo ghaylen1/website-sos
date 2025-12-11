@@ -28,6 +28,7 @@ const signupTranslations = {
         'label-terms': 'I agree to the Terms & Conditions',
         'signup-btn-submit': 'Create Account',
         'footer-text': 'Already have an account?',
+        'login-here-link': 'Login here',
         'back-btn': '← Back',
         'category-placeholder': '-- Select a category --',
         'placeholder-fullname': 'Enter your full name',
@@ -61,18 +62,10 @@ const signupTranslations = {
         'sub-pos-responsable-partnership': 'Responsable',
         'sub-pos-assistant-partnership': 'Assistant',
         'sub-pos-active-partnership': 'Membre Actif',
-        'sub-pos-responsable-president': 'Responsable',
-        'sub-pos-assistant-president': 'Assistant',
-        'sub-pos-active-president': 'Membre Actif',
-        'sub-pos-responsable-vice-president': 'Responsable',
-        'sub-pos-assistant-vice-president': 'Assistant',
-        'sub-pos-active-vice-president': 'Membre Actif',
-        'sub-pos-responsable-secretaire-general': 'Responsable',
-        'sub-pos-assistant-secretaire-general': 'Assistant',
-        'sub-pos-active-secretaire-general': 'Membre Actif',
         'label-terms': 'J\'accepte les Termes & Conditions',
         'signup-btn-submit': 'Créer un compte',
         'footer-text': 'Vous avez déjà un compte?',
+        'login-here-link': 'Connectez-vous ici',
         'back-btn': '← Retour',
         'category-placeholder': '-- Sélectionnez une catégorie --',
         'placeholder-fullname': 'Entrez votre nom complet',
@@ -118,6 +111,7 @@ const signupTranslations = {
         'label-terms': 'أوافق على الشروط والأحكام',
         'signup-btn-submit': 'إنشاء حساب',
         'footer-text': 'هل لديك حساب بالفعل؟',
+        'login-here-link': 'سجل الدخول هنا',
         'back-btn': 'رجوع ←',
         'category-placeholder': '-- اختر فئة --',
         'placeholder-fullname': 'أدخل اسمك الكامل',
@@ -146,7 +140,7 @@ function changeSignupLanguage(lang) {
                 element.textContent = translations[key];
             } else if (key === 'footer-text') {
                 // Handle the footer text with link separately
-                element.innerHTML = translations[key] + ' <a href="login.html" class="login-link">Login here</a>';
+                element.innerHTML = translations[key] + ' <a href="login.html" class="login-link">' + translations['login-here-link'] + '</a>';
             } else {
                 element.textContent = translations[key];
             }

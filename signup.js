@@ -65,9 +65,6 @@ function initializeLanguageSelector() {
 function initializePositionSelection() {
     const positionRadios = document.querySelectorAll('.position-radio');
     const subPositions = {
-        president: document.getElementById('sub-position-president'),
-        'vice-president': document.getElementById('sub-position-vice-president'),
-        'secretaire-general': document.getElementById('sub-position-secretaire-general'),
         rh: document.getElementById('sub-position-rh'),
         event: document.getElementById('sub-position-event'),
         partnership: document.getElementById('sub-position-partnership')
