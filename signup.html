@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="imgs/IMG_1289.png" type="image/png"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SOS Ambassadors Club</title>
+</head>
+<body class="signup-page">
+    <div class="page-header">
+        <a href="index.html" class="back-link">
+            <button class="back-btn">← Back</button>
+        </a>
+        <div class="language-selector">
+            <button class="btn btn-language" id="lang-btn">FR</button>
+            <ul id="language-list" class="language-dropdown">
+                <li data-lang="fr">Français</li>
+                <li data-lang="en">English</li>
+                <li data-lang="ar">العربية</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <div class="signup-card">
+            <div class="signup-header">
+                <img src="imgs/logoSOS_fr.png" alt="SOS Logo" class="signup-logo" id="signup-logo">
+                <h1 id="signup-title">Sign Up</h1>
+                <p id="signup-subtitle">Join the SOS Ambassadors Club</p>
+            </div>
+
+            <form class="signup-form">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="fullname" id="label-fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email" id="label-email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password" id="label-password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="form-group">
+                    <label for="confirm-password" id="label-confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="form-group">
+                    <label for="phone" id="label-phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Empty Select Field -->
+                <div class="form-group">
+                    <label for="etablissement" id="label-etablissement">Établissement *</label>
+                    <select id="etablissement" name="etablissement" required>
+                        <option value="" hidden selected disabled>Sélectionnez votre établissement</option>
+                        
+                        <optgroup label="SOUSSE">
+                            <option value="Faculté de Droit et Sciences Politiques - Sousse">Faculté de Droit et Sciences Eco. et Politiques</option>
+                            <option value="Faculté de Médecine de Sousse">Faculté de Médecine</option>
+                            <option value="Faculté des Lettres et Sciences Humaines - Sousse">Faculté des Lettres et Sciences Humaines</option>
+                            <option value="IHEC Sousse">IHEC Sousse (Institut des Hautes Etudes Commerciales)</option>
+                            <option value="ISG Sousse">ISG Sousse (Institut Supérieur de Gestion)</option>
+                            <option value="ISET Sousse">ISET Sousse</option>
+                            <option value="ISFF Sousse">ISFF Sousse (Institut Supérieur de Finance et de Fiscalité)</option>
+                            <option value="ISTLS Sousse">ISTLS Sousse (Institut Supérieur du Transport et de la Logistique)</option>
+                            <option value="ISBAS Sousse">ISBAS Sousse (Institut Supérieur de Beaux Arts)</option>
+                            <option value="ISM Sousse">ISM Sousse (Institut Supérieur de Musique)</option>
+                            <option value="ISSATS Sousse">ISSATS Sousse (Institut Supérieur des Sciences Appliquées et de Technologie)</option>
+                            <option value="ISSI Sousse">ISSI Sousse (Institut Supérieur des Sciences Infirmières)</option>
+                            <option value="ESSTSS">ESSTSS (Ecole Supérieure des Sciences et Techniques de la Santé)</option>
+                            <option value="ENISo">ENISo (Ecole Nationale d'Ingénieurs de Sousse)</option>
+                            <option value="IPB Sousse">IPB Sousse (Institut Privé des Beaux-Arts - Privé)</option>
+                            <option value="ISPSS Sousse">ISPSS Sousse (Institut Supérieur Privé des Sciences de la Santé - Privé)</option>
+                            <option value="ISPSIEF Sousse">ISPSIEF Sousse (Institut Supérieur Privé des Sciences Infirmières Etoile de Formation - Privé)</option>
+                            <option value="IHE Sousse">IHE Sousse (Institut des Hautes Études - Privé)</option>
+                            <option value="Université Privée de Sousse (UPS)">Université Privée de Sousse (UPS)</option>
+                            <option value="ESPRIT Sousse">ESPRIT (Privé)</option>
+                            <option value="ESB Sousse">ESB - Esprit School of Business (Privé)</option>
+                            <option value="ESPITA Sousse">ESPITA (Privé)</option>
+                            <option value="FMSA Sousse">FMSA (Privé)</option>
+                            <option value="UPSAT Sousse">UPSAT (Privé)</option>
+                            <option value="ESPIT Sousse">ESPIT (Privé)</option>
+                            <option value="ESPIN Sousse">ESPIN (Privé)</option>
+                            <option value="EPI Polytechnique Sousse">EPI Polytechnique (Privé)</option>
+                            <option value="EPI Digital School Sousse">EPI Digital School (Privé)</option>
+                            <option value="EPI Arch Sousse">EPI Arch (Privé)</option>
+                            <option value="EPI Business School Sousse">EPI Business School (Privé)</option>
+                        </optgroup>
+                        
+                        <optgroup label="HAMMAM SOUSSE">
+                            <option value="ISITCOM Hammam Sousse">ISITCOM Hammam Sousse (Institut Supérieur d'Informatique et des Technologies de Communication)</option>
+                            <option value="ESSTHS Hammam Sousse">ESSTHS Hammam Sousse (Ecole Supérieure des Sciences et de la Technologie)</option>
+                        </optgroup>
+                        
+                        <optgroup label="CHOTT MERIEM">
+                            <option value="ISA Chott Mériem">ISA Chott Mériem (Institut Supérieur Agronomique)</option>
+                        </optgroup>
+                        
+                        <optgroup label="MONASTIR">
+                            <option value="Faculté des Sciences de Monastir">Faculté des Sciences</option>
+                            <option value="Faculté de Médecine de Monastir">Faculté de Médecine</option>
+                            <option value="Faculté de Médecine Dentaire de Monastir">Faculté de Médecine Dentaire</option>
+                            <option value="Faculté de Pharmacie de Monastir">Faculté de Pharmacie</option>
+                            <option value="ENIM">ENIM (École Nationale d'Ingénieurs)</option>
+                            <option value="ISIMM">ISIMM (Institut Supérieur d'Informatique et de Mathématiques)</option>
+                            <option value="ISBS Monastir">ISBS (Institut Supérieur de Biotechnologie de Monastir)</option>
+                            <option value="IPEIEM">IPEIEM (Institut Préparatoire aux Études d'Ingénieurs)</option>
+                            <option value="ISB Monastir">ISB Monastir (Institut Supérieur de Biotechnologie)</option>
+                            <option value="ESSTSSM">ESSTSSM</option>
+                            <option value="ISMMM">ISMMM (Institut Supérieur Métiers Mode)</option>
+                            <option value="POLYTECH Monastir">POLYTECH Monastir (Privé)</option>
+                            <option value="Université Centrale">Université Centrale (Privé)</option>
+                        </optgroup>
+                        
+                        <optgroup label="MOKNINE">
+                            <option value="ISLAAB Moknine">ISLAAB Moknine (Institut Supérieur des Langues Appliquées aux Affaires et au Tourisme)</option>
+                        </optgroup>
+                        
+                        <optgroup label="MAHDIA">
+                            <option value="FSEG Mahdia">FSEG Mahdia</option>
+                            <option value="ISI Mahdia">ISI Mahdia (Institut Supérieur d'Informatique)</option>
+                            <option value="ISSATM Mahdia">ISSATM Mahdia (Institut Supérieur des Sciences Appliquées et de Technologie)</option>
+                            <option value="ISAM Mahdia">ISAM Mahdia (Institut Supérieur des Arts et Métiers)</option>
+                            <option value="ISEAH Mahdia">ISEAH Mahdia (Institut Supérieur des Études Appliquées en Humanités)</option>
+                            <option value="ISET Mahdia">ISET Mahdia</option>
+                        </optgroup>
+                        
+                        <optgroup label="KSAR HELLAL">
+                            <option value="ISET Ksar Hellal">ISET Ksar Hellal</option>
+                        </optgroup>
+                        
+                        <optgroup label="SFAX">
+                            <option value="Faculté de Droit de Sfax">Faculté de Droit</option>
+                            <option value="FSEG Sfax">FSEG Sfax (Faculté des Sciences Economiques et de Gestion)</option>
+                            <option value="Faculté de Médecine de Sfax">Faculté de Médecine</option>
+                            <option value="Faculté des Sciences de Sfax">Faculté des Sciences</option>
+                            <option value="Faculté des Lettres et Sciences Humaines de Sfax">Faculté des Lettres et Sciences Humaines</option>
+                            <option value="ENIS Sfax">ENIS (Ecole Nationale d'Ingénieurs)</option>
+                            <option value="ESC Sfax">ESC Sfax (Ecole Supérieure de Commerce)</option>
+                            <option value="ISECS Sfax">ISECS (Institut Supérieur d'Electronique et de Communication)</option>
+                            <option value="ISGIS Sfax">ISGIS (Institut Supérieur de Gestion Industrielle)</option>
+                            <option value="IHEC Sfax">IHEC Sfax (Institut des Hautes Etudes Commerciales)</option>
+                            <option value="ISAAS Sfax">ISAAS (Institut Supérieur d'Administration des Affaires)</option>
+                            <option value="ISIMS Sfax">ISIMS (Institut Supérieur d'Informatique et de Multimédia)</option>
+                            <option value="ISAMS Sfax">ISAMS (Institut Supérieur des Arts et Métiers)</option>
+                            <option value="ISBM Sfax">ISBM (Institut Supérieur de Biotechnologie)</option>
+                            <option value="ISET Sfax">ISET Sfax</option>
+                            <option value="Institut de l'Olivier Sfax">Institut de l'Olivier</option>
+                            <option value="ESPIT Sfax">ESPIT Sfax (Ecole Supérieure Internationale Privée de Technologie - Privé)</option>
+                        </optgroup>
+                        
+                        <optgroup label="KAIROUAN">
+                            <option value="Faculté des Lettres et Sciences Humaines - Kairouan">Faculté des Lettres et Sciences Humaines</option>
+                            <option value="Faculté des Sciences et Techniques de Sidi Bouzid">Faculté des Sciences et Techniques de Sidi Bouzid</option>
+                            <option value="ISIG Kairouan">ISIG Kairouan (Institut Supérieur d'Informatique et de Gestion)</option>
+                            <option value="ISEJP Kairouan">ISEJP Kairouan (Institut Supérieur des Etudes Juridiques et Politiques)</option>
+                            <option value="ISSATK Kairouan">ISSATK Kairouan (Institut Supérieur des Sciences Appliquées et de Technologie)</option>
+                            <option value="ISAMK Kairouan">ISAMK Kairouan (Institut Supérieur des Arts et Métiers)</option>
+                            <option value="ISAMIK Kairouan">ISAMIK Kairouan (Institut Supérieur des Mathématiques Appliquées et de l'Informatique)</option>
+                            <option value="ISEAHS Sbeïtla">ISEAHS Sbeïtla (Institut Supérieur des Etudes Appliquées en Sciences Humaines)</option>
+                            <option value="ISAM Kasserine">ISAM Kasserine (Institut Supérieur des Arts et Métiers)</option>
+                            <option value="ISSAT Kasserine">ISSAT Kasserine (Institut Supérieur des Sciences Appliquées et de Technologie)</option>
+                            <option value="ISET Kasserine">ISET Kasserine</option>
+                            <option value="ISAM Sidi Bouzid">ISAM Sidi Bouzid (Institut Supérieur des Arts et Métiers)</option>
+                            <option value="ISET Kairouan">ISET Kairouan</option>
+                            <option value="ISPSIK Kairouan">ISPSIK Kairouan (Institut Supérieur Privé des Sciences Infirmières - Privé)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- Position Selection -->
+                <div class="form-group">
+                    <label id="label-position">Position</label>
+                    <div class="position-options">
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="president" class="position-radio">
+                            <span id="pos-president">President</span>
+                            <!-- Sub-Position for President (Hidden by default) -->
+                            <div class="sub-position-nested" id="sub-position-president" style="display: none;">
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="responsable" class="sub-position-radio">
+                                    <span id="sub-pos-responsable-president">Responsible</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="assistant" class="sub-position-radio">
+                                    <span id="sub-pos-assistant-president">Assistant</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="active-member" class="sub-position-radio">
+                                    <span id="sub-pos-active-president">Active Member</span>
+                                </label>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="vice-president" class="position-radio">
+                            <span id="pos-vice-president">Vice President</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="secretaire-general" class="position-radio">
+                            <span id="pos-secretaire">Secretary General</span>
+                            <!-- Sub-Position for Secretary General (Hidden by default) -->
+                            <div class="sub-position-nested" id="sub-position-secretaire-general" style="display: none;">
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="responsable" class="sub-position-radio">
+                                    <span id="sub-pos-responsable-secretaire-general">Responsible</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="assistant" class="sub-position-radio">
+                                    <span id="sub-pos-assistant-secretaire-general">Assistant</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="active-member" class="sub-position-radio">
+                                    <span id="sub-pos-active-secretaire-general">Active Member</span>
+                                </label>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="rh" class="position-radio">
+                            <span id="pos-rh">HR Department</span>
+                            <!-- Sub-Position for RH (Hidden by default) -->
+                            <div class="sub-position-nested" id="sub-position-rh" style="display: none;">
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="responsable" class="sub-position-radio">
+                                    <span id="sub-pos-responsable">Responsible</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="assistant" class="sub-position-radio">
+                                    <span id="sub-pos-assistant">Assistant</span>
+                                </label>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="event" class="position-radio">
+                            <span id="pos-event">Event Department</span>
+                            <!-- Sub-Position for Event (Hidden by default) -->
+                            <div class="sub-position-nested" id="sub-position-event" style="display: none;">
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="responsable" class="sub-position-radio">
+                                    <span id="sub-pos-responsable-event">Responsible</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="assistant" class="sub-position-radio">
+                                    <span id="sub-pos-assistant-event">Assistant</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="active-member" class="sub-position-radio">
+                                    <span id="sub-pos-active-event">Active Member</span>
+                                </label>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="position" value="partnership" class="position-radio">
+                            <span id="pos-partnership">Partnership Department</span>
+                            <!-- Sub-Position for Partnership (Hidden by default) -->
+                            <div class="sub-position-nested" id="sub-position-partnership" style="display: none;">
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="responsable" class="sub-position-radio">
+                                    <span id="sub-pos-responsable-partnership">Responsible</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="assistant" class="sub-position-radio">
+                                    <span id="sub-pos-assistant-partnership">Assistant</span>
+                                </label>
+                                <label class="checkbox-label sub-checkbox">
+                                    <input type="radio" name="sub-position" value="active-member" class="sub-position-radio">
+                                    <span id="sub-pos-active-partnership">Active Member</span>
+                                </label>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Terms & Conditions -->
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span id="label-terms">I agree to the Terms & Conditions</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="signup-btn" id="signup-btn-submit">Create Account</button>
+            </form>
+
+            <div class="signup-footer">
+                <p id="footer-text">Already have an account? <a href="login.html" class="login-link">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup-lang.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

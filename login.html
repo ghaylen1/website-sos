@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login - SOS Ambassadors Club</title>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="imgs/logo-sos-village11-1.png" alt="SOS Logo" id="logo" onclick="gohome()">
-            <h1 id="main-title">CLUBS DES AMBASSADEURS SOS VILLAGES D'ENFANTS</h1></div>
+<body class="login-page">
+    <div class="page-header">
+        <a href="index.html" class="back-link">
+            <button class="back-btn">â† Back</button>
+        </a>
+        <div class="language-selector">
+            <button class="btn btn-language" id="lang-btn">FR</button>
+            <ul id="language-list" class="language-dropdown">
+                <li data-lang="fr">Français</li>
+                <li data-lang="en">English</li>
+                <li data-lang="ar">العربية</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="imgs/logoSOS_fr.png" alt="SOS Logo" class="login-logo" id="login-logo">
+                <h1 id="login-title">Login</h1>
+                <p id="login-subtitle">Welcome back to SOS Ambassadors Club</p>
+            </div>
 
-            <label for="">Password :</label><br><br>
-            <input type="text"><br>
-            <button type="submit"></button>
-            
-        </form>
-    </main>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email" id="label-email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
 
-    </center>
-    
+                <div class="form-group">
+                    <label for="password" id="label-password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
 
-    
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span id="remember-me-text">Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn" id="login-btn">Sign In</button>
+            </form>
+
+            <div class="login-footer">
+                <p id="footer-login">Don't have an account? <a href="signup.html" class="signup-link" id="signup-link-text">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login-lang.js"></script>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
